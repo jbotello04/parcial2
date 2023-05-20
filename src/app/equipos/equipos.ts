@@ -1,4 +1,4 @@
-export class Partido {
+export class Equipo {
   id: number;
   country:	String;
   draws: number;

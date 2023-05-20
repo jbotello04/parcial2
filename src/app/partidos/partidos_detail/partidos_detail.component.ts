@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Partidos_detail } from '../partidos_detail';
 
 @Component({
   selector: 'app-partidos_detail',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Partidos_detailComponent implements OnInit {
 
+  partidoId!: number;
+  @Input() partido!: Partidos_detail;
   constructor() { }
 
   ngOnInit() {

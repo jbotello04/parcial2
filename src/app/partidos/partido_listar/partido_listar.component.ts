@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { PartidoService } from '../partido.service';
-import { Partidos_detail } from '../partidos_detail/partidos_detail';
+import { Partidos_detail } from '../partidos_detail';
 
 @Component({
   selector: 'app-partido-list',
   templateUrl: './partido_listar.component.html',
   styleUrls: ['./partido_listar.component.css']
 })
-export class PilotoListComponent implements OnInit {
+export class PartidoListComponent implements OnInit {
   partidos: Array<Partidos_detail>=[];
 
   selectedPartido!: Partidos_detail;

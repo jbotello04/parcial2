@@ -17,6 +17,6 @@ getPartidos(): Observable<Partidos_detail[]> {
 }
 
 getPartido(id : string ): Observable<Partidos_detail>{
-    return this.http.get<Partidos_detail>(this.ApiUrl+"/"+id);
+    return this.http.get<Partidos_detail>(this.ApiUrl);
   }
 }

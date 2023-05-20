@@ -1,3 +1,39 @@
-<p>
-  partido_listar works!
-</p>
+<div *ngIf="selected">
+
+</div>
+
+
+<div class="container" >
+  <div class="row" style="margin-top: 25px;">
+      <div class="col-sm-12">
+          <h1 style="background-color: aqua; " align="center" >Partidos</h1>
+      </div>
+  </div>
+  <div class="row" align="center">
+      <div class="col-sm-7">
+          <table class="table" id="series">
+              <thead>
+                  <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Local</th>
+                  <th scope="col">Vistante</th>
+                  </tr>
+              </thead>
+              <div *ngFor="let partido of partidos" >
+                <tr (click)="onSelected(partido)">
+                  <td>{{partido.id}}</td>
+                  <td>{{partido.Local}} </td>
+                  <td>{{partido.Vistante}}</td>
+                </tr>
+              </div>
+
+          </table>
+
+          <div id="Avg" align="left" style="background-color:azure ; padding:10px ;  ">
+
+          </div>
+      </div>
+
+
+  </div>
+</div>
